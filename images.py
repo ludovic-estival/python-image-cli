@@ -11,7 +11,7 @@ app = typer.Typer()
 def convert_webp(
     directory: Annotated[str, typer.Argument(help='Directory of pictures to convert')],
     img_format: Annotated[str, typer.Argument(help='Format to convert pictures into')] = 'jpeg',
-    delete: Annotated[bool, typer.Argument(help='Delete original pictures when converted')] = True):
+    delete: Annotated[bool, typer.Option(help='Delete original pictures when converted')] = True):
     """Convert a WEBP image into another format."""
 
     paths = []
