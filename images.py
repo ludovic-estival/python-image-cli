@@ -1,7 +1,5 @@
 """Images manipulations."""
 
-# requirements: typer, pillow
-
 import os
 from typing_extensions import Annotated
 from PIL import Image, ImageOps
