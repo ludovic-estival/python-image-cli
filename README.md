@@ -12,7 +12,7 @@ It's recommended to use a Python virtual environment: `python -m venv venv`
 
 Activation on Linux: `source venv/bin/activate`
 
-Activation on Linux: `.\venv\Scripts\activate`
+Activation on Windows: `.\venv\Scripts\activate` (use `Set-ExecutionPolicy Unrestricted -Scope Process`)
 
 Install dependencies: `pip install -r requirements.txt`
 
@@ -30,3 +30,4 @@ You can use option `--delete` to delete original pictures when converted.
 Create a thumbnail: `python images.py thumbnail FILE WIDTH HEIGHT OUTPUT`
 
 Example: `python images.py thumbnail picture.jpg 450 600 picture-thumbnail.jpg`
+
